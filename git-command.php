@@ -15,3 +15,4 @@
 //! git remote add origin https://github.com/ogisetiawan/git-note.git : menambahakan remote repository github
 //! git push -u origin master : push soruce data ke github 
 //! git log : melihat log pada git /git log --oneline
+//! git clone : membuat clone data soruce git repo, mlnjutkan/menambahkan perubahan pada app
