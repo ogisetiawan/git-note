@@ -14,5 +14,9 @@
 //! git branch [nama_branch_baru]                                    : membuat percabangan baru
 //! git branch                                                       : melihat isi branch pda repo
 //! git checkout                                                     : pindah ke cabang baru utuk commit/prubahan baru
+//! git checkout [nomor_commit]                                      : melihat file dimasa lalu sesuai nomor commit
+//! git reset --soft [nomor_commit]                                  : mengembalikan kondisi file dalam keadaan staged
+//! git reset --mixed [nomor_commit]                                  : mengembalikan kondisi file dalam keadaan modified
+//! git reset --hard [nomor_commit]                                  : mengembalikan kondisi file dalam keadaan commit
 //! git clone                                                        : membuat clone data soruce git repo, mlnjutkan/menambahkan perubahan pada app
 //! git clone --no-checkout <repo_url>                               : clone file .git / file commit terakhir .git 
