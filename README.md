@@ -1,2 +1,3 @@
-## GIT
-Cuman catetan kecil tentang GIT
+## COMMAND DEV
+
+Catatan kecil tentang terminal command developer
