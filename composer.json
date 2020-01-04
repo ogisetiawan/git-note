@@ -1,15 +1,18 @@
 {
-    "name": "ogy/commander-dev",
-    "description": "Tester composer command",
-    "type": "project",
-    "license": "GPL",
-    "authors": [
-        {
-            "name": "Ogi Setiawan",
-            "email": "ogisetaiwan21@gmail.com"
-        }
-    ],
-    "require": {
-        "nesbot/carbon": "^2.28"
+  "name": "ogy/commander-dev",
+  "description": "Tester composer command",
+  "type": "project",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Ogi Setiawan",
+      "email": "ogisetaiwan21@gmail.com"
     }
+  ],
+  "require": {
+    "nesbot/carbon": "^2.28"
+  },
+  "scripts": {
+    "server": "php -S localhost:8080"
+  }
 }

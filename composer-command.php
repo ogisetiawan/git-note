@@ -14,3 +14,10 @@
 //?                                    - selain itu akan ada kumpulan library pada folder vendor
 //! composer search [nama_lib]         : perintah untuk mencari library or packagist.org
 //! composer remove <vendor>/<library> : perintah untuk menhapus salah satu lib yang sudah terinstall
+
+
+// @ COMPOSER SERVER
+//! composer server                    : menjalankan script php pada server.
+//?                                    - sebenarnya pada command terminal biasa kita dapat menjalan script dgn
+//?                                    - php -S localhost:8080
+//?                                    - akan tetapi kita menggunakan composer, maka tambahkan attribute script di composer.json
