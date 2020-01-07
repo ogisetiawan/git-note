@@ -11,7 +11,7 @@
  ** git previous   : fitur untuk melihat/merubah/menambahkan perubahan file pada waktu tertentu
  *?                  git reset   : mengembalikan file ke kondisi sebelumnya, kemudian menghapus catatan sejarah commit beikutnya.
  *?                  git revert  : mengembalikan file ke kondisi sebelumnya, dengan tidak menghapus catatan sejarah commit beikutnya.
- **  
+ *
  */
 
  //@ GIT FILE
@@ -43,3 +43,4 @@
 //! git log                                                          : melihat log pada git /git log --oneline
 //! git clone                                                        : membuat clone data soruce git repo, melanjutkan/menambahkan perubahan pada app terkahir
 //! git clone --no-checkout <repo_url>                               : clone file .git pada commit terakhir 
+//! git pull --rebase origin master                                  : ketika ada file yang tidak sama dgn file lokal dan repo
