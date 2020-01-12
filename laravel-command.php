@@ -5,6 +5,8 @@
  *? ENVIORMENT: configuration database,mailing dll
  *? SEEDING   : fitur untuk membuat data dummy kdlam database 
  *? FAKER     : sbuah libraary untuk membuat data dummy scara automatis dgn data yg tersedia scara random 
+ *? MIGRATION : versioning controller pada structure database
+ * 
 */
 
 //@ LARAVEL ARTISAN
@@ -17,13 +19,21 @@
 //! php artisan serve: perintah untuk menjalankan ke dlm server 
 //?                  : atau bsa dijalankan dgn perintah localhost://[nama_dir]/public dlm folder public
 
-/// CREATE FILE
+/// CONTROLLER
 //! php artisan make:controller [nama_controller]                     : untuk membuat sebuah controller 
 //! php artisan make:controller [nama_folder]/[nama_controller]       : untuk membuat sebuah controller didalam folder
 
 /// MAINTENANCE
 //! php artisan down: untuk mengaktifkan mode maintenence
 //! php artisan up  : untuk menonaktifkan mode maintenence
+
+/// MIGRATE
+//! php artisan make:migrate create_[nama_table]_table                : membuat file migration dgn {tanggal_pembuatan_nama_migration}
+//?                                                                   - jika kita buat tdak sesiai format create_{nama_table}_table maka pda method up() tdak akan terisi
+//?                                                                   - method up() untuk mmbuat dan merubah struktur table
+//?                                                                   - method down() membtalkan apa yg telah dieksekui method up()
+//! php artisan migrate                                               : menjalankan perintah migrate pada dir migrate dan method up()
+//! php artisan migrate:rollback                                      : menjalankan periintah migrate  pada dir migrate dan method down()
 
 /// TESTING
 //! php artisan make:seeder [nama_seeder]    : untuk membuat sebuah file seeder
@@ -35,6 +45,8 @@
 //# view      : resources/view/[file_view]
 //# controller: app/http/cotrollers
 //# seed      : database/seeds
+//# assets    : public
+//# migrateion: database/migration
 
 //@ ENVIOREMENT
 //? fitur configruation project laravel di dalam sebuah file .env spertin databse, mail, auth dll
