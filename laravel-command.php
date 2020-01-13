@@ -28,10 +28,10 @@
 //! php artisan up  : untuk menonaktifkan mode maintenence
 
 /// MIGRATE
-//! php artisan make:migrate create_[nama_table]_table                : membuat file migration dgn {tanggal_pembuatan_nama_migration}
-//?                                                                   - jika kita buat tdak sesiai format create_{nama_table}_table maka pda method up() tdak akan terisi
-//?                                                                   - method up() untuk mmbuat dan merubah struktur table
-//?                                                                   - method down() membtalkan apa yg telah dieksekui method up()
+//! php artisan make:migration create_[nama_table]_table                : membuat file migration dgn {tanggal_pembuatan_nama_migration}
+//?                                                                     - jika kita buat tdak sesiai format create_{nama_table}_table maka pda method up() tdak akan terisi
+//?                                                                     - method up() untuk mmbuat dan merubah struktur table
+//?                                                                     - method down() membtalkan apa yg telah dieksekui method up()
 //! php artisan migrate                                               : menjalankan perintah migrate pada dir migrate dan method up()
 //! php artisan migrate:rollback                                      : menjalankan periintah migrate  pada dir migrate dan method down()
 
