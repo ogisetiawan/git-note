@@ -1,6 +1,9 @@
 <?php
 /**
  ** LARAVEL 6 : framerok php modern and powerfull 
+ *? ROUTE    : akses jalur dari request app sperti http,artisan dll
+ *? CONTROLLER :
+ * 
  *? TEMPLATE  : laravel menggunakan templating blade
  *? ENVIORMENT: configuration database,mailing dll
  *? SEEDING   : fitur untuk membuat data dummy kdlam database 
@@ -9,7 +12,16 @@
  * 
 */
 
-//@ LARAVEL ARTISAN
+//@ DIRECTORY
+//# route     : routes/web.php
+//# view      : resources/view/[file_view]
+//# controller: app/http/cotrollers
+//# seed      : database/seeds
+//# assets    : public
+//# migrateion: database/migration
+
+
+//@ LARAVEL ARTISAN CHEEETSHEET
 /// INSTALL
 //! composer create-project --prefer-dist laravel/[nama_folder_proect]: perintah untuk install laravel 
 //? create-project                                                    : perintah untuk create-project
@@ -32,21 +44,25 @@
 //?                                                                     - jika kita buat tdak sesiai format create_{nama_table}_table maka pda method up() tdak akan terisi
 //?                                                                     - method up() untuk mmbuat dan merubah struktur table
 //?                                                                     - method down() membtalkan apa yg telah dieksekui method up()
-//! php artisan migrate                                               : menjalankan perintah migrate pada dir migrate dan method up()
-//! php artisan migrate:rollback                                      : menjalankan periintah migrate  pada dir migrate dan method down()
+//! php artisan migrate                                                 : menjalankan perintah migrate pada dir migrate dan method up()
+//! php artisan migrate:rollback                                        : menjalankan periintah migrate  pada dir migrate dan method down()
 
 /// TESTING
 //! php artisan make:seeder [nama_seeder]    : untuk membuat sebuah file seeder
 //! php artisan db:seed --class=[nama_seeder]: menjalankan pertintah seeder pada method run()
 //! php artisan db:seed                      : smua file seeder akan dijalankan
 
-//@ DIRECTORY
-//# route     : routes/web.php
-//# view      : resources/view/[file_view]
-//# controller: app/http/cotrollers
-//# seed      : database/seeds
-//# assets    : public
-//# migrateion: database/migration
+//@ ROUTE
+//? web route          : digunakan untuk request HTTP
+///                    - get   : request dari url sbuah browser
+///                    - post  : proses kirim data 
+///                    - put   : proses kirim data bersifat update bukan create {proses_edit}
+///                    - delete: penghapusan sebuah data
+//? api route          : digunakan untuk request HTTP tapi bebeda perlakuanya
+//? console route      : untuk merubah/ menjalakan php artisan 
+///                    - php artisan inspire: akan menjalakan perintah pada method trsbut 
+//? chanel route       : hak akses user untuk check aplikasi tertentu 
+//? route group        : membuat grouping pada sbuah route jika mempunyai prefix yang sama 
 
 //@ ENVIOREMENT
 //? fitur configruation project laravel di dalam sebuah file .env spertin databse, mail, auth dll
