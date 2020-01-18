@@ -3,12 +3,10 @@
  ** LARAVEL 6 : framerok php modern and powerfull 
  *? ROUTE     : akses jalur dari request app sperti http,artisan dll
  *? CONTROLLER: pengelola data dari action2 dalam method/function tersetbut
- * 
- *? TEMPLATE  : laravel menggunakan templating blade
  *? ENVIORMENT: configuration database,mailing dll
+ *? MIGRATION : versioning controller pada structure database
  *? SEEDING   : fitur untuk membuat data dummy kdlam database 
  *? FAKER     : sbuah libraary untuk membuat data dummy scara automatis dgn data yg tersedia scara random 
- *? MIGRATION : versioning controller pada structure database
  * 
 */
 
@@ -51,10 +49,11 @@
 //! php artisan migrate                                                 : menjalankan perintah migrate pada dir migrate dan method up()
 //! php artisan migrate:rollback                                        : menjalankan periintah migrate  pada dir migrate dan method down()
 
-//~ TESTING
+//~ SEEDER
 //! php artisan make:seeder [nama_seeder]    : untuk membuat sebuah file seeder
 //! php artisan db:seed --class=[nama_seeder]: menjalankan pertintah seeder pada method run()
 //! php artisan db:seed                      : smua file seeder akan dijalankan
+//? isi pada class DatabaseSeeder untuk apasaja seeder yg dpt djlankan bersamaan;
 
 // -------------------------------------------------------------------------------------------------------------
 
@@ -80,9 +79,21 @@
 //? file env.example adalah backupan file .env scara default
 
 //~ DATABASE
-//? query builder: fitur pengelolah database agar lebih penulisan efesien
-//? eloquent     : 
+//? query builder: fitur pengelolah database agar penulisan lebih efesien
+//? eloquent     : fitur pengelolah database agar penulisan lebih efesien dan efektif
 
-//@ SECURITY
+//~ MIGRATION
+//? membuat dan merubah structure table pada sbuah code (first code)
+//? schma builder : facade untuk mengubah struktur table dan database
+//? lihat file migration t_todo_table
+//? case method up() : mengecek ada table->membuat table dgn penambahan coloumn timestamp | merubah struktur
+//? case method down() : drop table->membuat table tnpa timstamp
+//? case tersebut kita membuat versioning bru ada coloumn created_at dan updated at
+//? ketika rollback kita dpt versi sblmny coloumn created_at dan updated at
+
+//~ SEEDER
+//? fitur untuk menambahkan beberapa data dummy pada table, untuk kebutuhan testing
+
+//~ SECURITY
 //? crf proteksion : fitur keamanan untul pencegahan input data dari luar aplikasi, dgn menambahakn crf_field() mka app
 //?                -akan generete token scara otomatis
