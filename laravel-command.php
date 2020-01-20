@@ -8,6 +8,7 @@
  *? SEEDING   : fitur untuk membuat data dummy kdlam database 
  *? FAKER     : sbuah libraary untuk membuat data dummy scara automatis dgn data yg tersedia scara random 
  *? ELOQUENT  : Object Relation Mapping (ORM) pada laravel 
+ *? SOFTDELETE : fitur pada laravel untuk membuat data tidak benar2 terhapus
 */
 
 // -------------------------------------------------------------------------------------------------------------
@@ -100,6 +101,12 @@
     //? mass_asiigment :fitur untuk membantu ketika byk dta yg harus diinsert dgn $request->all();
     //? fillablle : properti pd model untuk menentukan field mana saja yg diperbolehkan mass_assigment;
     //?      - fitur diatas mencegah untuk inject data yg dilakakuan oleh mass_asigment
+    /// see query documentation in website
+
+    //~ RECORD ELOQUENT
+    //? insert record
+    //? update record
+    //? delete record
 
     //~ SECURITY
     //? crf proteksion : fitur keamanan untul pencegahan input data dari luar aplikasi, dgn menambahakn crf_field() mka app
