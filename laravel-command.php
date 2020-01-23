@@ -7,8 +7,9 @@
  *? MIGRATION : versioning controller pada structure database
  *? SEEDING   : fitur untuk membuat data dummy kdlam database 
  *? FAKER     : sbuah libraary untuk membuat data dummy scara automatis dgn data yg tersedia scara random 
- *? ELOQUENT  : Object Relation Mapping (ORM) pada laravel 
- *? SOFTDELETE : fitur pada laravel untuk membuat data tidak benar2 terhapus
+ *? ELOQUENT  : Object Relation Mapping (ORM) pada laravel
+ *? MODEL     : interaksi ke database
+ *? SOFTDELETE: fitur pada laravel untuk membuat data tidak benar2 terhapus
 */
 
 // -------------------------------------------------------------------------------------------------------------
@@ -55,7 +56,10 @@
     //! php artisan make:seeder [nama_seeder]    : untuk membuat sebuah file seeder
     //! php artisan db:seed --class=[nama_seeder]: menjalankan pertintah seeder pada method run()
     //! php artisan db:seed                      : smua file seeder akan dijalankan
-    //? isi pada class DatabaseSeeder untuk apasaja seeder yg dpt djlankan bersamaan;
+    //? isi pada class DatabaseSeeder untuk apa aja seeder yg djlankan bersamaan;
+
+    //~ MODEL
+    //! php artisan make:model [nama_model] : membuat subah model 
 
 // -------------------------------------------------------------------------------------------------------------
 
@@ -96,10 +100,13 @@
     //~ SEEDER
     //? fitur untuk menambahkan beberapa data dummy pada table, untuk kebutuhan testing
 
+    //~ MODEL
+    //? model sbaikya menggunakan konvensi model, penamaan huruf kapital pda pertama jika dua NamaModel
+
     //~ ELOQUENT
     //? fitur pada laravel untuk megelola sbuah database scra singkat,
-    //? mass_asiigment :fitur untuk membantu ketika byk dta yg harus diinsert dgn $request->all();
-    //? fillablle : properti pd model untuk menentukan field mana saja yg diperbolehkan mass_assigment;
+    //? mass_asiigment: fitur untuk membantu ketika byk dta yg harus diinsert ke db dgn $request->all();
+    //? fillablle     : properti pd model untuk menentukan field mana saja yg diperbolehkan mass_assigment;
     //?      - fitur diatas mencegah untuk inject data yg dilakakuan oleh mass_asigment
     /// see query documentation in website
 
@@ -107,6 +114,16 @@
     //? insert record
     //? update record
     //? delete record
+
+    //~ SOFT DELETE
+    //? fitur pada laravel untuk menghapus data seperti recylbin,
+    //? dgn menambhkan kolom deleted_at dan beberapa schema builder untuk fitur data yg tidak benar2 terhapus
+    
+    //~ 
+    // VIEW
+    // view pada laravel menggunakan blade.templateing
+    // menampilkan data dari controller : {{ $data }}  - untuk protection xss
+    // menampilkan data dari controller : {{!! $data !!}} - untuk htmlspecialchars
 
     //~ SECURITY
     //? crf proteksion : fitur keamanan untul pencegahan input data dari luar aplikasi, dgn menambahakn crf_field() mka app
