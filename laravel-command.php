@@ -10,6 +10,7 @@
  *? ELOQUENT  : Object Relation Mapping (ORM) pada laravel
  *? MODEL     : interaksi ke database
  *? SOFTDELETE: fitur pada laravel untuk membuat data tidak benar2 terhapus
+ *? RELATIONSHIP: fitur untuk menghubungkan bbrapa table (join)
 */
 
 // -------------------------------------------------------------------------------------------------------------
@@ -119,6 +120,16 @@
     //? fitur pada laravel untuk menghapus data seperti recylbin,
     //? dgn menambhkan kolom deleted_at dan beberapa schema builder untuk fitur data yg tidak benar2 terhapus
     
+    //~ RELATIONSHIP
+    //? fitur untk menghubungkan bbrapa table (join)
+    //? one to one  :1 record data dari tble A hanya memiliki relasi ke 1 record data dr table B
+    ///             -  table A memiliki 1 coloumn data relasi di table B ( belongsTo : kepunyaan dr table B / memiliki id dr table B )
+    ///             -  table B (master) dimiliki 1 coloumn data relasi di table A (hasOne : punya satu id yg dimiliki oleh table A )
+    ///             -  one to one sma sperti inner join
+    //? one to many : proses relasi pada table 
+    //? many to many:
+    //? hasOne 
+
     //~ 
     // VIEW
     // view pada laravel menggunakan blade.templateing
