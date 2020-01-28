@@ -123,10 +123,13 @@
     //~ RELATIONSHIP
     //? fitur untk menghubungkan bbrapa table (join)
     //? one to one  :1 record data dari tble A hanya memiliki relasi ke 1 record data dr table B
-    ///             -  table A memiliki 1 coloumn data relasi di table B ( belongsTo : kepunyaan dr table B / memiliki id dr table B )
-    ///             -  table B (master) dimiliki 1 coloumn data relasi di table A (hasOne : punya satu id yg dimiliki oleh table A )
+    ///             -  table A memiliki 1 coloumn data relasi di table B ( hasOne : kepunyaan dr table B / memiliki id dr table B )
+    ///             -  table B (master) dimiliki 1 coloumn data relasi di table A (belongsTo : punya satu kolom id yg dimiliki oleh table A )
     ///             -  one to one sma sperti inner join
-    //? one to many : proses relasi pada table 
+    //? one to many : 1 record data dar table A bisa memiliki banyk data dr table B
+    ///             -  table A memiliki byk data relasi di table B ( hasMany: kepunyaan dr table B / memiliki id dr table B )
+    ///             -  table B (master) dimiliki 1 coloumn data relasi di table A (belongsTo : punya satu kolom id yg dimiliki oleh table A )
+    ///             -  one to many sma sperti left join
     //? many to many:
     //? hasOne 
 
