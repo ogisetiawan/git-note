@@ -126,12 +126,11 @@
     ///             -  table A memiliki 1 coloumn data relasi di table B ( hasOne : kepunyaan dr table B / memiliki id dr table B )
     ///             -  table B (master) dimiliki 1 coloumn data relasi di table A (belongsTo : punya satu kolom id yg dimiliki oleh table A )
     ///             -  one to one sma sperti inner join
-    //? one to many : 1 record data dar table A bisa memiliki banyk data dr table B
+    //? one to many : 1 record data dari table A bisa memiliki banyk data dr table B
     ///             -  table A memiliki byk data relasi di table B ( hasMany: kepunyaan dr table B / memiliki id dr table B )
-    ///             -  table B (master) dimiliki 1 coloumn data relasi di table A (belongsTo : punya satu kolom id yg dimiliki oleh table A )
+    ///             -  table B (master) dimiliki 1 coloumn banyak data relasi di table A (belongsTo : punya satu kolom id yg dimiliki oleh table A )
     ///             -  one to many sma sperti left join
-    //? many to many:
-    //? hasOne 
+    //? many to many: 1 record dari kedua table yang saling memiliki banyak data, dan biasanya ada table penghubung (pov)
 
     //~ 
     // VIEW
