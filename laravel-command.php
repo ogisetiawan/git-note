@@ -83,7 +83,7 @@
 
     //~ ENVIOREMENT
     //? fitur configruation project laravel di dalam sebuah file .env spertin databse, mail, auth dll
-    //? file env.example adalah backupan file .env scara default
+    //? file env.example adalah backupan file . env scara default
 
     //~ DATABASE
     //? query builder: fitur pengelolah database agar penulisan lebih efesien
@@ -132,11 +132,15 @@
     ///             -  one to many sma sperti left join
     //? many to many: 1 record dari kedua table yang saling memiliki banyak data, dan biasanya ada table penghubung (pov)
 
-    //~ 
-    // VIEW
-    // view pada laravel menggunakan blade.templateing
-    // menampilkan data dari controller : {{ $data }}  - untuk protection xss
-    // menampilkan data dari controller : {{!! $data !!}} - untuk htmlspecialchars
+    //~ VIEW
+    /// view pada laravel menggunakan blade.templateing
+    /// menampilkan data dari controller : {{ $data }}  - untuk protection xss/htmlspecialchars
+    /// menampilkan data dari controller : {{!! $data !!}} - untuk non-aktif htmlspecialchars/xss
+    /// layouting : stucture layout view secara partials
+    /// @yield : sbuah directive view untuk diisi dari view lain (content) 
+    /// @include : sbuah directive view untuk mengambil layout lain (navbar,footer, dll)
+    /// @extends : sbuah directive view untuk menggunakan sbuah parent view (master/induk)
+    /// @section : sbuah directive view untuk mendivisikan dari directive @yield
 
     //~ SECURITY
     //? crf proteksion : fitur keamanan untul pencegahan input data dari luar aplikasi, dgn menambahakn crf_field() mka app
