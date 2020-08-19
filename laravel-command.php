@@ -28,7 +28,7 @@
 
 //@ LARAVEL ARTISAN CHEEETSHEET
     //~ INSTALL
-    //! composer create-project --prefer-dist laravel/[nama_folder_proect]: perintah untuk install laravel 
+    //! composer create-project --prefer-dist laravel/laravel [nama_folder_proect]: perintah untuk install laravel 
     //? create-project                                                    : perintah untuk create-project
     //? --prefer-dist                                                     : perintah untuk download versi rekomendasi
 
@@ -62,6 +62,12 @@
     //~ MODEL
     //! php artisan make:model [nama_model] : membuat subah model 
 
+    //~ OTHER 
+    //! php artisan optimize : untuk optimize class loader
+    //! php artisan cache:clear : untuk clear cache
+    //! php artisan route:cache : untuk clear cache di route
+    //! php artisan view:cache : untuk clear cache di view
+    //! php artisan config:cache : untuk clear cache di config
 // -------------------------------------------------------------------------------------------------------------
 
 // @ ABOUT ?
