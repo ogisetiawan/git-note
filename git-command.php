@@ -44,3 +44,12 @@
 //! git clone                                                        : membuat clone data soruce git repo, melanjutkan/menambahkan perubahan pada app terkahir
 //! git clone --no-checkout <repo_url>                               : clone file .git pada commit terakhir 
 //! git pull --rebase origin master                                  : ketika ada file yang tidak sama dgn file lokal dan repo
+
+//@ SPECIFY COMMENT
+//! feat: The new feature you're adding to a particular application
+//! fix: A bug fix
+//! style: Feature and updates related to styling
+//! refactor: Refactoring a specific section of the codebase
+//! test: Everything related to testing
+//! docs: Everything related to documentation
+//! chore: Regular code maintenance.[ You can also use emojis to represent commit types]
