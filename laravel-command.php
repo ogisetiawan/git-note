@@ -52,6 +52,7 @@
     //?                                                                     - method down() membtalkan apa yg telah dieksekui method up()
     //! php artisan migrate                                                 : menjalankan perintah migrate pada dir migrate dan method up()
     //! php artisan migrate:rollback                                        : menjalankan periintah migrate  pada dir migrate dan method down()
+    //! php artisan migrate:rollback --step=5                               : rollback dari 5 (beberapa depand) batch/step 
 
     //~ SEEDER
     //! php artisan make:seeder [nama_seeder]    : untuk membuat sebuah file seeder
@@ -151,3 +152,40 @@
     //~ SECURITY
     //? crf proteksion : fitur keamanan untul pencegahan input data dari luar aplikasi, dgn menambahakn crf_field() mka app
     //?                -akan generete token scara otomatis
+
+    //~ CACHE IN ROUTE
+    //Clear Cache facade value:
+    Route::get('/clear-cache', function() {
+        $exitCode = Artisan::call('cache:clear');
+        return '<h1>Cache facade value cleared</h1>';
+    });
+
+    //Reoptimized class loader:
+    Route::get('/optimize', function() {
+        $exitCode = Artisan::call('optimize');
+        return '<h1>Reoptimized class loader</h1>';
+    });
+
+    //Route cache:
+    Route::get('/route-cache', function() {
+        $exitCode = Artisan::call('route:cache');
+        return '<h1>Routes cached</h1>';
+    });
+
+    //Clear Route cache:
+    Route::get('/route-clear', function() {
+        $exitCode = Artisan::call('route:clear');
+        return '<h1>Route cache cleared</h1>';
+    });
+
+    //Clear View cache:
+    Route::get('/view-clear', function() {
+        $exitCode = Artisan::call('view:clear');
+        return '<h1>View cache cleared</h1>';
+    });
+
+    //Clear Config cache:
+    Route::get('/config-cache', function() {
+        $exitCode = Artisan::call('config:cache');
+        return '<h1>Clear Config cleared</h1>';
+    });
