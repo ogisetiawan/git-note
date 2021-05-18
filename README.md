@@ -1,3 +1,4 @@
-## COMMAND DEV
+## BASIC TERMINAL
 
-Catatan kecil tentang terminal command developer
+
+
