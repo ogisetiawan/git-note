@@ -66,8 +66,10 @@
     //~ OTHER 
     //! php artisan optimize : untuk optimize class loader
     //! php artisan cache:clear : untuk clear cache
-    //! php artisan route:cache : untuk clear cache di route
-    //! php artisan view:cache : untuk clear cache di view
+    //! php artisan route:cache : untuk get cache di route
+    //! php artisan route:clear : untuk clear cache di route
+    //! php artisan view:cache : untuk get cache di view
+    //! php artisan view:clear : untuk clear cache di view
     //! php artisan config:cache : untuk clear cache di config
 // -------------------------------------------------------------------------------------------------------------
 
