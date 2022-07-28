@@ -191,3 +191,7 @@
         $exitCode = Artisan::call('config:cache');
         return '<h1>Clear Config cleared</h1>';
     });
+
+    //~ REMOVE PUBLIC ROOT 
+    //? Rename server.php in your Laravel root folder to index.php
+    //? Copy the .htaccess file from /public directory to your Laravel root folder.
