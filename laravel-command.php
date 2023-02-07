@@ -63,6 +63,10 @@
     //~ MODEL
     //! php artisan make:model [nama_model] : membuat subah model 
 
+    //~ MODEL AND CONTROLLER 
+    //! php artisan make:controller path/controller/TodoController --model=path/model/todo
+
+
     //~ OTHER 
     //! php artisan optimize : untuk optimize class loader
     //! php artisan cache:clear : untuk clear cache
