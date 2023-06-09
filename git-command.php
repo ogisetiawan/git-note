@@ -44,6 +44,7 @@
 //! git clone                                                        : membuat clone data soruce git repo, melanjutkan/menambahkan perubahan pada app terkahir
 //! git clone --no-checkout <repo_url>                               : clone file .git pada commit terakhir 
 //! git pull --rebase origin master                                  : ketika ada file yang tidak sama dgn file lokal dan repo
+//! git checkout -b add-dotenv-webpack                               : move or create new branch
 
 //@ SPECIFY COMMENT
 //! feat: The new feature you're adding to a particular application
